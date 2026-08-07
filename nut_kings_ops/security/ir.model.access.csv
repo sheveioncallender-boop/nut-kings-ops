@@ -1,8 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_nk_staff_user,nutkings.staff user,model_nutkings_staff,base.group_user,1,1,1,1
-access_nk_truck_user,nutkings.truck user,model_nutkings_truck,base.group_user,1,1,1,1
-access_nk_trip_user,nutkings.trip user,model_nutkings_trip,base.group_user,1,1,1,1
-access_nk_trip_line_user,nutkings.trip.line user,model_nutkings_trip_line,base.group_user,1,1,1,1
-access_nk_reason_user,nutkings.reason user,model_nutkings_movement_reason,base.group_user,1,1,1,1
-access_nk_sync_user,nutkings.sync user,model_nutkings_sync_event,base.group_user,1,1,1,0
-access_nk_backend_dashboard_user,nutkings.backend.dashboard user,model_nutkings_backend_dashboard,base.group_user,1,0,0,0
