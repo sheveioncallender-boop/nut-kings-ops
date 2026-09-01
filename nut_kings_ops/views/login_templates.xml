@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="nutkings_login_brand" inherit_id="web.login" name="Nut Kings Ops Login Branding">
+        <xpath expr="//form[@role='form']" position="before">
+            <div class="nk-login-brand">
+                <img src="/nut_kings_ops/static/img/nut_kings_logo.png" alt="The Nut Kings"/>
+                <div>
+                    <strong>Nut Kings Ops</strong>
+                    <span>Inventory &amp; Distribution</span>
+                </div>
+            </div>
+        </xpath>
+        <xpath expr="//form[@role='form']" position="attributes">
+            <attribute name="t-attf-class" add="nk-login-form" separator=" "/>
+        </xpath>
+    </template>
+</odoo>
