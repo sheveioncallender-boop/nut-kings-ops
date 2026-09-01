@@ -1,0 +1,37 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_nk_staff_system,nutkings.staff system,model_nutkings_staff,base.group_system,1,1,1,1
+access_nk_truck_system,nutkings.truck system,model_nutkings_truck,base.group_system,1,1,1,1
+access_nk_trip_system,nutkings.trip system,model_nutkings_trip,base.group_system,1,1,1,1
+access_nk_trip_line_system,nutkings.trip.line system,model_nutkings_trip_line,base.group_system,1,1,1,1
+access_nk_reason_system,nutkings.reason system,model_nutkings_movement_reason,base.group_system,1,1,1,1
+access_nk_sync_system,nutkings.sync system,model_nutkings_sync_event,base.group_system,1,1,1,1
+access_nk_dashboard_system,nutkings.backend.dashboard system,model_nutkings_backend_dashboard,base.group_system,1,1,1,1
+access_nk_area_system,nutkings.service.area system,model_nutkings_service_area,base.group_system,1,1,1,1
+access_nk_plan_system,nutkings.dispatch.plan system,model_nutkings_dispatch_plan,base.group_system,1,1,1,1
+access_nk_plan_line_system,nutkings.dispatch.plan.line system,model_nutkings_dispatch_plan_line,base.group_system,1,1,1,1
+access_nk_staff_manager,nutkings.staff manager,model_nutkings_staff,nut_kings_ops.group_nutkings_manager,1,1,1,1
+access_nk_truck_manager,nutkings.truck manager,model_nutkings_truck,nut_kings_ops.group_nutkings_manager,1,1,1,1
+access_nk_trip_manager,nutkings.trip manager,model_nutkings_trip,nut_kings_ops.group_nutkings_manager,1,1,1,1
+access_nk_trip_line_manager,nutkings.trip.line manager,model_nutkings_trip_line,nut_kings_ops.group_nutkings_manager,1,1,1,1
+access_nk_reason_manager,nutkings.reason manager,model_nutkings_movement_reason,nut_kings_ops.group_nutkings_manager,1,1,1,1
+access_nk_sync_manager,nutkings.sync manager,model_nutkings_sync_event,nut_kings_ops.group_nutkings_manager,1,1,1,1
+access_nk_dashboard_manager,nutkings.backend.dashboard manager,model_nutkings_backend_dashboard,nut_kings_ops.group_nutkings_manager,1,1,1,1
+access_nk_area_manager,nutkings.service.area manager,model_nutkings_service_area,nut_kings_ops.group_nutkings_manager,1,1,1,1
+access_nk_plan_manager,nutkings.dispatch.plan manager,model_nutkings_dispatch_plan,nut_kings_ops.group_nutkings_manager,1,1,1,1
+access_nk_plan_line_manager,nutkings.dispatch.plan.line manager,model_nutkings_dispatch_plan_line,nut_kings_ops.group_nutkings_manager,1,1,1,1
+access_nk_reason_office,nutkings.reason office receiving,model_nutkings_movement_reason,nut_kings_ops.group_nutkings_office_receiving,1,0,0,0
+access_nk_dashboard_office,nutkings.dashboard office receiving,model_nutkings_backend_dashboard,nut_kings_ops.group_nutkings_office_receiving,1,0,0,0
+access_nk_reason_raw_issue,nutkings.reason raw issue,model_nutkings_movement_reason,nut_kings_ops.group_nutkings_raw_material_issue,1,0,0,0
+access_nk_dashboard_raw_issue,nutkings.dashboard raw issue,model_nutkings_backend_dashboard,nut_kings_ops.group_nutkings_raw_material_issue,1,0,0,0
+access_nk_reason_finished_entry,nutkings.reason finished entry,model_nutkings_movement_reason,nut_kings_ops.group_nutkings_finished_goods_entry,1,0,0,0
+access_nk_dashboard_finished_entry,nutkings.dashboard finished entry,model_nutkings_backend_dashboard,nut_kings_ops.group_nutkings_finished_goods_entry,1,0,0,0
+access_nk_staff_dispatcher,nutkings.staff dispatcher,model_nutkings_staff,nut_kings_ops.group_nutkings_dispatcher,1,0,0,0
+access_nk_truck_dispatcher,nutkings.truck dispatcher,model_nutkings_truck,nut_kings_ops.group_nutkings_dispatcher,1,0,0,0
+access_nk_trip_dispatcher,nutkings.trip dispatcher,model_nutkings_trip,nut_kings_ops.group_nutkings_dispatcher,1,1,1,0
+access_nk_trip_line_dispatcher,nutkings.trip.line dispatcher,model_nutkings_trip_line,nut_kings_ops.group_nutkings_dispatcher,1,0,0,0
+access_nk_reason_dispatcher,nutkings.reason dispatcher,model_nutkings_movement_reason,nut_kings_ops.group_nutkings_dispatcher,1,0,0,0
+access_nk_sync_dispatcher,nutkings.sync dispatcher,model_nutkings_sync_event,nut_kings_ops.group_nutkings_dispatcher,1,0,0,0
+access_nk_dashboard_dispatcher,nutkings.dashboard dispatcher,model_nutkings_backend_dashboard,nut_kings_ops.group_nutkings_dispatcher,1,0,0,0
+access_nk_area_dispatcher,nutkings.service.area dispatcher,model_nutkings_service_area,nut_kings_ops.group_nutkings_dispatcher,1,0,0,0
+access_nk_plan_dispatcher,nutkings.dispatch.plan dispatcher,model_nutkings_dispatch_plan,nut_kings_ops.group_nutkings_dispatcher,1,1,1,0
+access_nk_plan_line_dispatcher,nutkings.dispatch.plan.line dispatcher,model_nutkings_dispatch_plan_line,nut_kings_ops.group_nutkings_dispatcher,1,1,1,1
