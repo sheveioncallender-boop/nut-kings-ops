@@ -1,0 +1,95 @@
+body:has(.nk-login-brand-panel) {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 12% 12%, rgba(255, 205, 48, .24), transparent 30%),
+        radial-gradient(circle at 90% 85%, rgba(20, 123, 67, .20), transparent 34%),
+        linear-gradient(135deg, #6d0711 0%, #b70f1c 48%, #7a0711 100%) !important;
+}
+body:has(.nk-login-brand-panel)::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: .12;
+    background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.35) 0 1px, transparent 1px 18px);
+}
+body:has(.nk-login-brand-panel) .container.py-5,
+body:has(.nk-login-brand-panel) main.container {
+    max-width: 980px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px !important;
+}
+body:has(.nk-login-brand-panel) .card {
+    display: grid !important;
+    grid-template-columns: minmax(310px, 1fr) minmax(330px, .9fr);
+    max-width: 880px !important;
+    width: 100% !important;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.30) !important;
+    border-radius: 28px !important;
+    background: rgba(255,255,255,.97) !important;
+    box-shadow: 0 30px 80px rgba(44,0,5,.38) !important;
+}
+.nk-login-brand-panel {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    min-height: 590px;
+    padding: 46px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: left;
+    background:
+        linear-gradient(160deg, rgba(122,7,17,.97), rgba(183,15,28,.96)),
+        #9d0c18;
+    position: relative;
+    overflow: hidden;
+}
+.nk-login-brand-panel::after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    right: -90px;
+    bottom: -90px;
+    border: 42px solid rgba(255,205,48,.18);
+    border-radius: 50%;
+}
+.nk-login-logo-wrap {
+    width: 150px;
+    height: 140px;
+    background: #fff;
+    border-radius: 26px;
+    display: grid;
+    place-items: center;
+    padding: 14px;
+    margin-bottom: 28px;
+    box-shadow: 0 14px 35px rgba(42,0,4,.22);
+}
+.nk-login-logo { width: 100%; height: 100%; object-fit: contain; }
+.nk-login-eyebrow { color: #ffd75a; font-size: 12px; font-weight: 800; letter-spacing: .16em; margin-bottom: 10px; }
+.nk-login-brand-panel h1 { color: #fff; font-size: clamp(34px, 5vw, 55px); line-height: .98; margin: 0 0 16px; font-weight: 850; }
+.nk-login-brand-panel p { font-size: 17px; line-height: 1.55; max-width: 360px; margin: 0 0 24px; color: rgba(255,255,255,.85); }
+.nk-login-role-tags { display: flex; flex-wrap: wrap; gap: 8px; position: relative; z-index: 1; }
+.nk-login-role-tags span { padding: 8px 11px; border: 1px solid rgba(255,255,255,.28); border-radius: 999px; background: rgba(255,255,255,.10); font-size: 12px; font-weight: 700; }
+body:has(.nk-login-brand-panel) .card-body { grid-column: 2; padding: 52px 42px !important; align-self: center; }
+body:has(.nk-login-brand-panel) .card-body > .text-center:first-child { display: none !important; }
+body:has(.nk-login-brand-panel) .oe_login_form .form-control { min-height: 48px; border-radius: 12px; border-color: #e2d8d9; }
+body:has(.nk-login-brand-panel) .oe_login_form .btn-primary { min-height: 50px; border-radius: 12px; border: 0; background: #b70f1c; font-weight: 800; box-shadow: 0 10px 24px rgba(183,15,28,.24); }
+body:has(.nk-login-brand-panel) .oe_login_form .btn-primary:hover { background: #8e0914; }
+body:has(.nk-login-brand-panel) a { color: #9d0c18; }
+@media (max-width: 760px) {
+    body:has(.nk-login-brand-panel) .container.py-5,
+    body:has(.nk-login-brand-panel) main.container { align-items: flex-start; padding: 14px !important; }
+    body:has(.nk-login-brand-panel) .card { display: block !important; border-radius: 22px !important; max-width: 470px !important; }
+    .nk-login-brand-panel { min-height: auto; padding: 25px 24px 22px; text-align: center; align-items: center; }
+    .nk-login-logo-wrap { width: 105px; height: 96px; border-radius: 20px; margin-bottom: 15px; }
+    .nk-login-brand-panel h1 { font-size: 34px; margin-bottom: 9px; }
+    .nk-login-brand-panel p { font-size: 14px; margin-bottom: 14px; }
+    .nk-login-role-tags { justify-content: center; }
+    body:has(.nk-login-brand-panel) .card-body { padding: 28px 24px 32px !important; }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="nutkings_login_branding" inherit_id="web.login_layout" name="Nut Kings Ops Branded Login">
+        <xpath expr="//div[hasclass('card-body')]" position="before">
+            <div class="nk-login-brand-panel">
+                <div class="nk-login-logo-wrap">
+                    <img src="/nut_kings_ops/static/img/nut_kings_logo.png" alt="Nut Kings" class="nk-login-logo"/>
+                </div>
+                <div class="nk-login-eyebrow">SECURE OPERATIONS PORTAL</div>
+                <h1>Nut Kings Ops</h1>
+                <p>Warehouse, finished goods and van distribution management.</p>
+                <div class="nk-login-role-tags">
+                    <span>Office Receiving</span>
+                    <span>Warehouse</span>
+                    <span>Dispatch</span>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

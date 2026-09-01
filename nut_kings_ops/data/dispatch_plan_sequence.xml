@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="seq_nutkings_dispatch_plan" model="ir.sequence">
+        <field name="name">Nut Kings Dispatch Demand Plan</field>
+        <field name="code">nutkings.dispatch.plan</field>
+        <field name="prefix">NK-DP/%(year)s/</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</odoo>
