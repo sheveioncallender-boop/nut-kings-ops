@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="workspace_login_page" name="Nut Kings Ops Workspace Login">
+        <t t-call="web.layout">
+            <t t-set="title">Nut Kings Ops Workspace</t>
+            <t t-set="x_icon" t-value="'/nut_kings_ops/static/description/icon.png'"/>
+            <t t-set="body_classname" t-value="'nk-workspace-login-page'"/>
+            <t t-set="head">
+                <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+                <meta name="theme-color" content="#17120f"/>
+                <meta name="robots" content="noindex,nofollow"/>
+                <link rel="stylesheet" href="/nut_kings_ops/static/workspace/workspace-login-v1.4.0.css"/>
+                <script src="/nut_kings_ops/static/workspace/workspace-login-v1.4.0.js" defer="defer"/>
+            </t>
+
+            <main class="nk-login-shell">
+                <section class="nk-login-intro" aria-labelledby="nk-login-heading">
+                    <div class="nk-login-brand">
+                        <span class="nk-login-logo"><img src="/nut_kings_ops/static/img/nut_kings_logo.png" alt="The Nut Kings"/></span>
+                        <span><strong>Nut Kings Ops</strong><small>Inventory &amp; Distribution</small></span>
+                    </div>
+                    <div class="nk-login-copy">
+                        <span class="nk-login-eyebrow">Operations Workspace</span>
+                        <h1 id="nk-login-heading">The right tools for every warehouse role.</h1>
+                        <p>Sign in once and the workspace will show only the operations assigned to you.</p>
+                    </div>
+                    <div class="nk-role-grid" aria-label="Nut Kings workspace roles">
+                        <article><span>↓</span><div><strong>Office Receiving</strong><small>Receive raw materials</small></div></article>
+                        <article><span>↑</span><div><strong>Raw Materials</strong><small>Issue materials to production</small></div></article>
+                        <article><span>+</span><div><strong>Finished Goods</strong><small>Enter completed products</small></div></article>
+                        <article><span>→</span><div><strong>Van Dispatch</strong><small>Load, deliver, return &amp; reconcile</small></div></article>
+                    </div>
+                    <div class="nk-login-engine"><span></span>Powered by Odoo inventory and stock movements</div>
+                </section>
+
+                <section class="nk-login-panel" aria-label="Workspace sign in">
+                    <div class="nk-login-card">
+                        <div class="nk-login-card-head">
+                            <span class="nk-login-mobile-logo"><img src="/nut_kings_ops/static/img/nut_kings_logo.png" alt=""/></span>
+                            <div>
+                                <span class="nk-login-kicker">Secure workspace</span>
+                                <h2>Welcome back</h2>
+                                <p>Use the account provided by your Nut Kings administrator.</p>
+                            </div>
+                        </div>
+                        <div t-if="error" class="nk-login-alert" role="alert"><t t-esc="error"/></div>
+                        <form action="/nutkings/login" method="post" class="nk-workspace-login-form">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <div class="nk-login-field">
+                                <label for="nk-login">Email or username</label>
+                                <input id="nk-login" name="login" type="text" t-att-value="login" placeholder="Enter your workspace login" autocomplete="username" autocapitalize="off" required="required" autofocus="autofocus"/>
+                            </div>
+                            <div class="nk-login-field">
+                                <label for="nk-password">Password</label>
+                                <div class="nk-password-wrap">
+                                    <input id="nk-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required="required" maxlength="4096"/>
+                                    <button type="button" id="nk-toggle-password" aria-label="Show password" aria-pressed="false"><span class="nk-eye" aria-hidden="true"></span></button>
+                                </div>
+                            </div>
+                            <button class="nk-login-submit" type="submit"><span>Sign in to Workspace</span><span aria-hidden="true">→</span></button>
+                        </form>
+                        <div class="nk-login-help">
+                            <strong>Need access or forgot your password?</strong>
+                            <span>Contact your Nut Kings manager for workspace access or a password reset.</span>
+                        </div>
+                        <p class="nk-login-admin-note">Odoo backend access remains separate and is reserved for administrators.</p>
+                    </div>
+                    <p class="nk-login-footer">Nut Kings Ops · Authorized personnel only</p>
+                </section>
+            </main>
+        </t>
+    </template>
+</odoo>
